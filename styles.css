@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.eot');
+    src: url('./fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Regular.woff') format('woff'),
+    url('./fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Medium.eot');
+        src: url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Medium.woff') format('woff'),
+        url('./fonts/TTLakes-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        }
+/***********общие стили*************/
+body{
+    font-family: 'TT Lakes', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#1B1C21;
+    margin: 0;
+}
+
+.container{
+    max-width: 320px;
+    margin: 0 auto; 
+    
+}
+/*********header***************/
+.header{
+    background-color: #FFFFFF;
+}
+.header, footer{
+    padding: 16px;
+}
+.header__title{
+  font-weight: normal;
+  text-transform: uppercase;
+color:#7E7E82;
+font-size: 1em;
+}
+button{
+    border:none;
+    background: #FFFFFF;
+}
+/****************main*************************/
+main{
+    background-color:#F2F2F2;
+height: 150px;
+    
+}
+
+
+.swiper-container {
+    
+    width: 92%;
+    height: 130px;
+    padding-bottom: 50px;
+    
+
+  }
+.swiper-wrapper{
+    width: 92%;
+   
+    background-color:#F2F2F2;
+    padding-top:16px;
+   
+}
+  .swiper-wrapper .swiper-slide {
+      
+      height:72px;
+      background: #FFFFFF;
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+display:flex;
+justify-content:space-around;
+align-items: center;
+  }
+  
+    .swiper-container .swiper-pagination-bullet { 
+        margin: 100px;
+        background-color: #DDDDDD;
+        width: 12px;
+        height: 12px;
+    }
