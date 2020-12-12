@@ -46,12 +46,16 @@ font-size: 1em;
 button{
     border:none;
     background: #FFFFFF;
+    cursor: pointer;
 }
+button:hover, button:focus{
+ outline:none;
+}    
 /****************main*************************/
 main{
-    background-color:#F2F2F2;
+    background-color:#F8F8F8;
 height: 150px;
-    
+  
 }
 
 
@@ -66,19 +70,22 @@ height: 150px;
 .swiper-wrapper{
     width: 92%;
    
-    background-color:#F2F2F2;
+    background-color:#F8F8F8;
     padding-top:16px;
    
 }
   .swiper-wrapper .swiper-slide {
       
       height:72px;
+      width: 240px;
       background: #FFFFFF;
 border: 1px solid #EAEAEA;
 border-radius: 6px;
 display:flex;
-justify-content:space-around;
+justify-content:space-between;
 align-items: center;
+padding-right: 16px;
+padding-left:16px;
   }
   
     .swiper-container .swiper-pagination-bullet { 
@@ -87,3 +94,61 @@ align-items: center;
         width: 12px;
         height: 12px;
     }
+    #btn{
+        display:none;
+    }
+@media(min-width: 768px){
+    .container{
+        min-width: 100%;
+        /* height: 100%; */
+    }
+    .header__title{
+        /* height: 15%; */
+        margin: 0;
+    }
+    .main{
+        height: 100%;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .main .swiper-container{
+        /* padding-left:10px;
+        padding-right: 10px; */
+        height: auto;
+        width: 97%;
+    }
+    .swiper-wrapper{
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        
+        
+    }
+    .swiper-wrapper .swiper-slide{
+        width: 27%;
+        margin-bottom: 16px;
+        /* margin: 16px 12px 8px 24px;  */
+    }
+    
+    #btn{
+        display:block;
+        background-color: #F8F8F8;
+        margin: 20px;
+        font-weight: 500;
+        font-family: "TT Lakes", serif;
+        font-size: 16px;
+    }
+    .main-menu__button_expand{
+        margin-right: 17px;
+    }
+    .swiper-slide.hidden_768{
+        display:none;
+    }
+    
+}
+@media(min-width:1120px){
+    .swiper-wrapper .swiper-slide{
+        width: 20%;  
+}
