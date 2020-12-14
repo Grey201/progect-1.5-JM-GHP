@@ -3,10 +3,10 @@ let mySwiper;
 function mobileSlider(){
   if (window.innerWidth <= 320 && slider.dataset.mobile =='false' ){
   mySwiper = new Swiper(slider, {
-    // cssMode: true,
-    slidesPerView:1.23,
+    
+    slidesPerView:1.4,
     spaceBetween: 10,
-    // slideClass:"swiper-slide",
+    
     pagination: {
       el: '.swiper-pagination'
     },
@@ -34,13 +34,13 @@ var expand = document.querySelector('.main-menu__button_expand');
 
 button.onclick = function(){
  
-  // if (window.innerWidth <= 320
+   if (window.innerWidth >= 768 && window.innerWidth < 1120 ){
 
   if (text.innerHTML == 'Показать все') {
     text.innerHTML = 'Скрыть';
      expand.style.transform = 'rotate(180deg)';
 
-    //  document.querySelectorAll('.hidden_768').style.display = 'none';
+    
     ViewSonic.classList.remove('hidden_768');
     sony.classList.remove('hidden_768'); 
     apple.classList.remove('hidden_768');
@@ -60,5 +60,29 @@ button.onclick = function(){
     
   return false;
 }
+   }
+   
+    if (window.innerWidth >= 1120){ 
+      if( text.innerHTML == 'Показать все') {
+      text.innerHTML = 'Скрыть';
+       expand.style.transform = 'rotate(180deg)';
+      apple.classList.remove('hidden_1120');
+      samsung.classList.remove('hidden_1120');
+      lenovo.classList.remove('hidden_1120');
+      
+    }
+    else {
+      text.innerHTML = 'Показать все';
+      expand.style.transform = 'rotate(0deg)';
+      
+      apple.classList.add('hidden_1120');
+      samsung.classList.add('hidden_1120');
+      lenovo.classList.add('hidden_1120');
+      
+      
+    return false;
+   }
+  }
+  
 };
 };
