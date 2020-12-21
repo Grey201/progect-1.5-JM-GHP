@@ -172,11 +172,6 @@ main {
 
 @media(min-width:1120px) {
 
-    /* .swiper-wrapper {
-        justify-content: flex-start;
-
-    } */
-
     .swiper-wrapper .swiper-slide {
         width: 20%;
         margin-right: 20px;
